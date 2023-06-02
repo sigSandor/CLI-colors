@@ -1,5 +1,27 @@
 # CLI-colors
 
+
+    Command Prompt (cmd):
+        To change the text color: color <hex_value>
+        To change the background color: color <background_hex_value>
+        To clear the screen: cls
+
+    PowerShell:
+        To change the text color: Write-Host -ForegroundColor <color> "Text"
+        To change the background color: Write-Host -BackgroundColor <color> "Text"
+        To clear the screen: Clear-Host
+
+    Bash (Unix/Linux):
+        To change the text color: echo -e "\e[<attribute>;<foreground_color>mText\e[0m"
+        To change the background color: echo -e "\e[<attribute>;<background_color>mText\e[0m"
+        To clear the screen: clear
+
+    Zsh (Z shell):
+        To change the text color: echo -e "%{<attribute>;<foreground_color>%}Text%{\e[0m%}"
+        To change the background color: echo -e "%{<attribute>;<background_color>%}Text%{\e[0m%}"
+        To clear the screen: clear
+        
+    
     Orange:
         Hexadecimal: #FFA500
         cmd: color 6
